@@ -1,0 +1,297 @@
+{
+  "promotion": {
+    "type": "New Features!",
+    "title": "Order Prints",
+    "summary": "30% off your first order!",
+    "description": {
+      "mainText": "Now offering professional quality prints in various sizes finishes and paper weights.",
+      "bulletPoints": ["Flyers", "4-page folded brochures", "Sign-riders"]
+    },
+    "image": "../../images/admin-newest-feature-hero.png"
+  },
+  "notifications": [
+    {
+      "id": 1,
+      "title": "New Features &amp; Updates",
+      "description": "Customize and control your SEO and Metatag settings"
+    },
+    {
+      "id": 2,
+      "title": "Take Advantage of Interactive Floor Plans",
+      "description": "We keep our floor plan editor as simple and easy to use as possible"
+    },
+    {
+      "id": 3,
+      "title": "Customize Slideshow Settings",
+      "description": "Customize and adjust the Virtual Tour slideshow options for best results"
+    },
+    {
+      "id": 4,
+      "title": "Add Innovative 3D Tours",
+      "description": "Create game-changing listings with multiple 3D tours on your website."
+    }
+  ],
+  "properties": [
+    {
+      "id": "1",
+      "address": "Abc Street, 1235 Road New WA",
+      "status": "Not Published"
+    },
+    {
+      "id": "2",
+      "address": "Xyz Street, 456 Road New WA",
+      "status": "Published"
+    },
+    {
+      "id": "3",
+      "address": "AAA Street, 123 Road New WA",
+      "status": "Not Published"
+    },
+    {
+      "id": "4",
+      "address": "BBB Street, 134235 Some Road XYZ",
+      "status": "Not Published"
+    },
+    {
+      "id": "5",
+      "address": "AAA Street, 123 Road New WA",
+      "status": "Not Published"
+    },
+    {
+      "id": "6",
+      "address": "BBB Street, 134235 Some Road XYZ",
+      "status": "Not Published"
+    }
+  ],
+  "propety-details": [
+    {
+      "id": 1,
+      "address": {
+        "house": "Abc Street, 134235 Some Road",
+        "city": "WA",
+        "zip_code": 125625
+      },
+      "published": false,
+      "urls": ["https://domain1.com", "https://domain2.com"],
+      "page_views": {}
+    },
+    {
+      "id": 2,
+      "address": {
+        "house": "Xyz Street, 456 Road New WA",
+        "city": "WA",
+        "zip_code": 125625
+      },
+      "published": true,
+      "urls": ["https://domain1.com", "https://domain2.com"],
+      "page_views": {}
+    },
+    {
+      "id": 3,
+      "address": {
+        "house": "AAA Street, 123 Road New WA",
+        "city": "WA",
+        "zip_code": 125625
+      },
+      "published": false,
+      "urls": ["https://domain1.com", "https://domain2.com"],
+      "page_views": {}
+    },
+    {
+      "id": 4,
+      "address": {
+        "house": "BBB Street, 134235 Some Road XYZ",
+        "city": "WA",
+        "zip_code": 125625
+      },
+      "published": false,
+      "urls": ["https://domain1.com", "https://domain2.com"],
+      "page_views": {}
+    },
+    {
+      "id": 5,
+      "address": {
+        "house": "AAA Street, 123 Road New WA",
+        "city": "WA",
+        "zip_code": 125625
+      },
+      "published": false,
+      "urls": ["https://domain1.com", "https://domain2.com"],
+      "page_views": {}
+    },
+    {
+      "id": 6,
+      "address": {
+        "house": "BBB Street, 134235 Some Road XYZ",
+        "city": "WA",
+        "zip_code": 125625
+      },
+      "published": false,
+      "urls": ["https://domain1.com", "https://domain2.com"],
+      "page_views": {}
+    }
+  ],
+  "billing": {
+    "packages": {
+      "monthly": [
+        {
+          "id": 1,
+          "title": "Starter",
+          "active": false,
+          "price": "105",
+          "unit": "AED",
+          "type": "monthly",
+          "features": [
+            {
+              "qty": 1,
+              "title": "Active Listing"
+            },
+            {
+              "qty": 2,
+              "title": "Listing Agents"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Plus",
+          "active": false,
+          "price": "225",
+          "unit": "AED",
+          "type": "monthly",
+          "features": [
+            {
+              "qty": 3,
+              "title": "Active Listing"
+            },
+            {
+              "qty": 5,
+              "title": "Listing Agents"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Pro",
+          "active": false,
+          "price": "400",
+          "unit": "AED",
+          "type": "monthly",
+          "features": [
+            {
+              "qty": 6,
+              "title": "Active Listing"
+            },
+            {
+              "qty": 15,
+              "title": "Listing Agents"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Broker",
+          "active": true,
+          "price": "1000",
+          "unit": "AED",
+          "type": "monthly",
+          "features": [
+            {
+              "qty": "unlimited",
+              "title": "Active Listing"
+            },
+            {
+              "qty": 5,
+              "title": "Listing Agents"
+            },
+            {
+              "title": "Additional Agent accounts as low as 22 AED per month"
+            }
+          ]
+        }
+      ],
+      "annual": [
+        {
+          "id": 1,
+          "title": "Starter",
+          "active": false,
+          "price": "1050",
+          "unit": "AED",
+          "type": "annual",
+          "features": [
+            {
+              "qty": 1,
+              "title": "Active Listing"
+            },
+            {
+              "qty": 2,
+              "title": "Listing Agents"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Plus",
+          "active": false,
+          "price": "2250",
+          "unit": "AED",
+          "type": "annual",
+          "features": [
+            {
+              "qty": 3,
+              "title": "Active Listing"
+            },
+            {
+              "qty": 5,
+              "title": "Listing Agents"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Pro",
+          "active": false,
+          "price": "4000",
+          "unit": "AED",
+          "type": "annual",
+          "features": [
+            {
+              "qty": 6,
+              "title": "Active Listing"
+            },
+            {
+              "qty": 15,
+              "title": "Listing Agents"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Broker",
+          "active": true,
+          "price": "9000",
+          "unit": "AED",
+          "type": "annual",
+          "features": [
+            {
+              "qty": "unlimited",
+              "title": "Active Listing"
+            },
+            {
+              "qty": 5,
+              "title": "Listing Agents"
+            },
+            {
+              "title": "Additional Agent accounts as low as 22 AED per month"
+            }
+          ]
+        }
+      ]
+    },
+    "currentPlan": {
+      "title": "Free Trial",
+      "expiry": "Aug 3, 2020",
+      "type": "trial"
+    }
+  }
+}
