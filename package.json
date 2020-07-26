@@ -43,7 +43,8 @@
     "start": "gulp serve",
     "build": "cross-env NODE_ENV=production gulp",
     "test": "npm run serve:test",
-    "tasks": "gulp --tasks"
+    "tasks": "gulp --tasks",
+    "serve:db": "json-server --watch fake-db/db.json"
   },
   "browserslist": [
     "> 1%",

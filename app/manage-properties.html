@@ -1,395 +1,551 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>mena</title>
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <!-- Place favicon.ico in the root directory -->
-        <!-- build:css styles/vendor.css -->
-        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
-        <!-- endbuild -->
-        <!-- build:css styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
-        <!-- build:js scripts/modernizr.js -->
-        <script src="scripts/modernizr.js"></script>
-        <!-- endbuild -->
-    </head>
-    <body>
-        <!--[if IE]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>mena</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <!-- endbuild -->
+    <!-- build:js scripts/modernizr.js -->
+    <script src="scripts/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
 
-        <div class="container-fluid">
-            <div class="row">
-                <!-- Sidebar -->
-                <nav class="sidebar subnav-active">
-                    <div class="sidebar-column nav-column">
-                        <div class="logo text-center">
-                            <a href="#">
-                                <img src="images/admin-logo.png" alt="Mena Listing">
-                            </a>
-                        </div>
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">
-                                    <span class="m-icon size-32 dashboard"></span>
-                                    <span>Dashboard</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="manage-properties.html">
-                                    <span class="m-icon size-32 property"></span>
-                                    <span>Manage Properties</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="billing.html">
-                                    <span class="m-icon size-32 billing"></span>
-                                    <span>Billing</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="profile.html">
-                                    <span class="m-icon size-32 profile"></span>
-                                    <span>Profile</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="support.html">
-                                    <span class="m-icon size-32 support"></span>
-                                    <span>Support</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="sidebar-column subnav-column">
-                        <ul class="subnav">
-                            <li class="subnav-item">
-                                <a href="#" class="subnav-link active">
-                                    <span>Abc Street, 1235 Road New WA</span>
-                                    <span class="text-bold">Not Published</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-
-                <!-- Content Area -->
-                <main role="main" class="offset-2 col-10 admin-content-area">
-                    <div class="row admin-content-page-title align-items-center">
-                        <div class="col">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item active" aria-current="page">Account</li>
-                                </ol>
-                            </nav>
-                        </div>
-                        <div class="col text-right">
-                            <a href="add-property.html" class="btn btn-primary">
-                                <span class="m-icon size-20 add"></span>
-                                <span>Add a Property</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="welcome-msg tight">
-                        <div class="d-flex align-items-end">
-                            <div class="flex-grow-1">
-                                <div class="dropdown">
-                                    <button
-                                        type="button"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                        data-toggle="dropdown"
-                                        id="dropdownMenuButton"
-                                        class="btn btn-link dropdown-toggle mb-2 p-0">
-                                        <span class="m-icon size-20 info-icon"></span>
-                                        <!-- <span class="m-icon size-20 checker-icon"></span> -->
-                                        <span>Not Published</span>
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#publishProperty">Publish Property</a>
-                                    </div>
-                                </div>
-                                <div class="admin-card-title-text">Abc Street, 1235 Road</div>
-                                <div class="admin-card-title-content">New, WA 125625</div>
-                            </div>
-                            <div class="flex-shrink-1">
-                                <a href="property-details.html" class="btn btn-link content-link">Edit Property</a>
-                                <a href="#" class="btn btn-link content-link">View Property</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="admin-card">
-                        <div class="title-admin-card">
-                            <div class="title-text">Introducing</div>
-                        </div>
-                        <div class="content-admin-card">
-                            <div class="row align-items-center mt-4">
-                                <div class="col-4">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div>
-                                            <img src="images/admin-logo.png" alt="">
-                                        </div>
-                                        <div>
-                                            <span class="m-icon activate-icon"></span>
-                                        </div>
-                                        <div>
-                                            <span class="m-icon fb-ads"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 offset-4 text-right">
-                                    <a href="#" class="btn btn-primary btn-lg">Get Started</a>
-                                </div>
-                            </div>
-                            <div class="content-text my-4">Activate Facebook Ads to promote your listings more efficiently and generate more leads.</div>
-                        </div>
-                    </div>
-                    <div class="row row-eq-height mb-4">
-                        <div class="col-6">
-                            <div class="admin-card h-100">
-                                <div class="title-admin-card">
-                                    <div class="d-flex">
-                                        <div class="flex-grow-1">
-                                            <div class="title-text">Property URLs</div>
-                                        </div>
-                                        <div class="flex-shrink-1">
-                                            <a href="#">+ Add Custom Domain</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="content-admin-card">
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text" id="">Copy</span>
-                                            </div>
-                                            <input type="text" class="form-control" value="http://www.listign1.com">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text" id="">Copy</span>
-                                            </div>
-                                            <input type="text" class="form-control" value="http://www.listign1.com">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="admin-card">
-                                <div class="content-admin-card">
-                                    <div class="m-tabs">
-                                        <div class="d-flex justify-content-center mb-4">
-                                            <div class="flex-shrink-1">
-                                                <nav class="nav nav-pills flex-column flex-sm-row" id="shareReprortsTab" role="tablist">
-                                                    <a role="tab"
-                                                        href="#share"
-                                                        id="share-tab"
-                                                        data-toggle="tab"
-                                                        aria-selected="true"
-                                                        aria-controls="share"
-                                                        class="flex-sm-fill text-sm-center nav-link active"
-                                                    >Share</a>
-                                                    <a role="tab"
-                                                        href="#reports"
-                                                        id="reports-tab"
-                                                        data-toggle="tab"
-                                                        aria-selected="true"
-                                                        aria-controls="reports"
-                                                        class="flex-sm-fill text-sm-center nav-link"
-                                                    >Reports</a>
-                                                </nav>
-                                            </div>
-                                        </div>
-                                        <div class="tab-content" id="shareReportTabContent">
-                                            <div class="tab-pane fade show active" id="share" role="tabpanel" aria-labelledby="share-tab">
-                                                <div class="row">
-                                                    <div class="col-6 mb-4">
-                                                        <a href="#">
-                                                            <span class="share-btn fb"></span>
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-6 mb-4">
-                                                        <a href="#">
-                                                            <span class="share-btn tw"></span>
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <a href="#">
-                                                            <span class="share-btn in"></span>
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <a href="#">
-                                                            <span class="share-btn email"></span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="reports" role="tabpanel" aria-labelledby="reports-tab">
-                                                <div class="d-flex">
-                                                    <div>
-                                                        <span class="m-icon share-reports"></span>
-                                                    </div>
-                                                    <div class="pl-4">
-                                                        <div class="content-text">Share automated email reports with clients and team members.</div>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex justify-content-center mb-4">
-                                                    <div class="flex-shrink-1">
-                                                        <a href="#" class="btn btn-outline-primary">Schedule</a>
-                                                        <a href="#" class="btn btn-primary">Send Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="title-before-card">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-1 pr-4">
-                                <div class="title-text">Property Leads</div>
-                            </div>
-                            <div class="flex-grow-1">
-                                <span class="m-icon size-24 filter-icon"></span>
-                                <a class="content-link pl-2" href="#">Filter</a>
-                            </div>
-                            <div class="flex-shrink-1">
-                                <span class="m-icon size-18 export-icon"></span>
-                                <a class="content-link pl-2" href="#">Export</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="admin-card">
-                        <div class="content-admin-card">
-                            <div class="no-data flex-column">
-                                <div class="mt-4">No leads available for Abc Street...</div>
-                                <div>Time to show people your listing Hit the button below to share this property with network!</div>
-                                <div class="my-4">
-                                    <a href="#">Click to Share</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="title-before-card">
-                        <div class="d-flex align-items-end">
-                            <div class="flex-grow-1">
-                                <div class="d-flex align-items-center page-view-title">
-                                    <span class="m-icon graph-icon"></span>
-                                    <span>Page Views</span>
-                                    <input type="date" name="" id="">
-                                    <span>to</span>
-                                    <input type="date" name="" id="">
-                                </div>
-                            </div>
-                            <div class="flex-shrink-1">
-                                <div class="stats-row">
-                                    <div>
-                                        <div class="count">12</div>
-                                        <div>Today</div>
-                                    </div>
-                                    <div>
-                                        <div class="count">134</div>
-                                        <div>Last 20 Days</div>
-                                    </div>
-                                    <div>
-                                        <div class="count">5472</div>
-                                        <div>All Time</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="admin-card">
-                        <div class="content-admin-card">
-                            <div class="content-text text-center">Page Views</div>
-                            <img class="mb-4" src="http://placehold.it/1256x200" alt="">
-                            <div class="d-flex justify-content-between">
-                                <div class="stat-item">
-                                    <div>Top Visitor Cities</div>
-                                    <div class="item-value">No Data Yet</div>
-                                </div>
-                                <div class="stat-item">
-                                    <div>Top Referrers</div>
-                                    <div class="item-value">No Referrer Data Yet</div>
-                                </div>
-                                <div class="stat-item">
-                                    <div>New vs Returning</div>
-                                    <div class="item-value">No Data Yet</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </main>
-
-                <a href="chat.html" class="btn btn-primary chat-btn">
-                    <span class="m-icon chat-trigger"></span>
-                </a>
-
-                <div
-                    tabindex="-1"
-                    role="dialog"
-                    class="modal fade"
-                    aria-hidden="true"
-                    data-backdrop="static"
-                    id="publishProperty"
-                    aria-labelledby="publishPropertyLabel">
-                    <div class="modal-dialog modal-lg modal-dialog-centered publish-property-modal" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <div class="modal-title">Abc Street, 1235 Road</div>
-                                <div class="modal-subtitle">New, WA 125625</div>
-                            </div>
-                            <div class="p-4">
-                                <div class="text-center mb-5">
-                                    <div class="mb-3">
-                                        <span class="m-icon check-icon"></span>
-                                    </div>
-                                    <p id="publishPropertyLabel">You have successfully published your property website!</p>
-                                </div>
-                                <div class="text-center my-5">
-                                    <p>Now that your property website is live, it's time to get people to see it.<br>
-                                    Publish a target Facebook ad to reach potential buyers and generate leads.</p>
-                                    <a href="" class="btn btn-primary">Create Facebook Ad</a>
-                                </div>
-                                <div class="text-center my-5">
-                                    <p>Access the brochure section to create flyers, post cards, and other visual for advertising. If you don't want to make visuals yourself, order professional prints from our designers.</p>
-                                    <a href="" class="btn btn-tertiary">Go to Brochures</a>
-                                </div>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon1">Property URL:</span>
-                                    </div>
-                                    <input type="text" class="form-control" value="https://abcstreet1235road.menaListing.com">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-primary">Change</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <nav class="sidebar subnav-active">
+          <div class="sidebar-column nav-column">
+            <div class="logo text-center">
+              <a href="#">
+                <img src="images/admin-logo.png" alt="Mena Listing" />
+              </a>
             </div>
-        </div>
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <span class="m-icon size-32 dashboard"></span>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="manage-properties.html">
+                  <span class="m-icon size-32 property"></span>
+                  <span>Manage Properties</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="billing.html">
+                  <span class="m-icon size-32 billing"></span>
+                  <span>Billing</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile.html">
+                  <span class="m-icon size-32 profile"></span>
+                  <span>Profile</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="support.html">
+                  <span class="m-icon size-32 support"></span>
+                  <span>Support</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-column subnav-column">
+            <ul class="subnav" id="subnav-list"></ul>
+          </div>
+        </nav>
 
-        <!-- build:js scripts/vendor.js -->
-        <script type="text/javascript" src="/node_modules/jquery/dist/jquery.js"></script>
-        <script type="text/javascript" src="/node_modules/popper.js/dist/umd/popper.js"></script>
-        <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
-        <!-- endbuild -->
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
-    </body>
+        <!-- Content Area -->
+        <main id="main" role="main" class="offset-2 col-10 admin-content-area">
+          <div class="row admin-content-page-title align-items-center">
+            <div class="col">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Account
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <div class="col text-right">
+              <a href="add-property.html" class="btn btn-primary">
+                <span class="m-icon size-20 add"></span>
+                <span>Add a Property</span>
+              </a>
+            </div>
+          </div>
+          <div class="welcome-msg tight">
+            <div class="d-flex align-items-end">
+              <div class="flex-grow-1">
+                <div class="dropdown">
+                  <button
+                    type="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    data-toggle="dropdown"
+                    id="dropdownMenuButton"
+                    class="btn btn-link dropdown-toggle mb-2 p-0"
+                  >
+                    <span class="m-icon size-20 info-icon"></span>
+                    <!-- <span class="m-icon size-20 checker-icon"></span> -->
+                    <span>Not Published</span>
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      data-toggle="modal"
+                      data-target="#publishProperty"
+                      >Publish Property</a
+                    >
+                  </div>
+                </div>
+                <div class="admin-card-title-text" id="street"></div>
+                <div class="admin-card-title-content" id="city"></div>
+              </div>
+              <div class="flex-shrink-1">
+                <a
+                  id="edit-btn"
+                  href="property-details.html"
+                  class="btn btn-link content-link"
+                  >Edit Property</a
+                >
+                <a id="view-btn" href="#" class="btn btn-link content-link"
+                  >View Property</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="admin-card">
+            <div class="title-admin-card">
+              <div class="title-text">Introducing</div>
+            </div>
+            <div class="content-admin-card">
+              <div class="row align-items-center mt-4">
+                <div class="col-4">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div>
+                      <img src="images/admin-logo.png" alt="" />
+                    </div>
+                    <div>
+                      <span class="m-icon activate-icon"></span>
+                    </div>
+                    <div>
+                      <span class="m-icon fb-ads"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 offset-4 text-right">
+                  <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+                </div>
+              </div>
+              <div class="content-text my-4">
+                Activate Facebook Ads to promote your listings more efficiently
+                and generate more leads.
+              </div>
+            </div>
+          </div>
+          <div class="row row-eq-height mb-4">
+            <div class="col-6">
+              <div class="admin-card h-100">
+                <div class="title-admin-card">
+                  <div class="d-flex">
+                    <div class="flex-grow-1">
+                      <div class="title-text">Property URLs</div>
+                    </div>
+                    <div class="flex-shrink-1">
+                      <a href="#">+ Add Custom Domain</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-admin-card" id="prop-domains">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="">Copy</span>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control"
+                        value="http://www.listign1.com"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="admin-card">
+                <div class="content-admin-card">
+                  <div class="m-tabs">
+                    <div class="d-flex justify-content-center mb-4">
+                      <div class="flex-shrink-1">
+                        <nav
+                          class="nav nav-pills flex-column flex-sm-row"
+                          id="shareReprortsTab"
+                          role="tablist"
+                        >
+                          <a
+                            role="tab"
+                            href="#share"
+                            id="share-tab"
+                            data-toggle="tab"
+                            aria-selected="true"
+                            aria-controls="share"
+                            class="flex-sm-fill text-sm-center nav-link active"
+                            >Share</a
+                          >
+                          <a
+                            role="tab"
+                            href="#reports"
+                            id="reports-tab"
+                            data-toggle="tab"
+                            aria-selected="true"
+                            aria-controls="reports"
+                            class="flex-sm-fill text-sm-center nav-link"
+                            >Reports</a
+                          >
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="tab-content" id="shareReportTabContent">
+                      <div
+                        class="tab-pane fade show active"
+                        id="share"
+                        role="tabpanel"
+                        aria-labelledby="share-tab"
+                      >
+                        <div class="row">
+                          <div class="col-6 mb-4">
+                            <a href="#">
+                              <span class="share-btn fb"></span>
+                            </a>
+                          </div>
+                          <div class="col-6 mb-4">
+                            <a href="#">
+                              <span class="share-btn tw"></span>
+                            </a>
+                          </div>
+                          <div class="col-6">
+                            <a href="#">
+                              <span class="share-btn in"></span>
+                            </a>
+                          </div>
+                          <div class="col-6">
+                            <a href="#">
+                              <span class="share-btn email"></span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="reports"
+                        role="tabpanel"
+                        aria-labelledby="reports-tab"
+                      >
+                        <div class="d-flex">
+                          <div>
+                            <span class="m-icon share-reports"></span>
+                          </div>
+                          <div class="pl-4">
+                            <div class="content-text">
+                              Share automated email reports with clients and
+                              team members.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center mb-4">
+                          <div class="flex-shrink-1">
+                            <a href="#" class="btn btn-outline-primary"
+                              >Schedule</a
+                            >
+                            <a href="#" class="btn btn-primary">Send Now</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="title-before-card">
+            <div class="d-flex align-items-center">
+              <div class="flex-shrink-1 pr-4">
+                <div class="title-text">Property Leads</div>
+              </div>
+              <div class="flex-grow-1">
+                <span class="m-icon size-24 filter-icon"></span>
+                <a class="content-link pl-2" href="#">Filter</a>
+              </div>
+              <div class="flex-shrink-1">
+                <span class="m-icon size-18 export-icon"></span>
+                <a class="content-link pl-2" href="#">Export</a>
+              </div>
+            </div>
+          </div>
+          <div class="admin-card">
+            <div class="content-admin-card">
+              <div class="no-data flex-column">
+                <div class="mt-4">
+                  No leads available for <span id="street"></span>...
+                </div>
+                <div>
+                  Time to show people your listing Hit the button below to share
+                  this property with network!
+                </div>
+                <div class="my-4">
+                  <a href="#">Click to Share</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="title-before-card">
+            <div class="d-flex align-items-end">
+              <div class="flex-grow-1">
+                <div class="d-flex align-items-center page-view-title">
+                  <span class="m-icon graph-icon"></span>
+                  <span>Page Views</span>
+                  <input type="date" name="" id="" />
+                  <span>to</span>
+                  <input type="date" name="" id="" />
+                </div>
+              </div>
+              <div class="flex-shrink-1">
+                <div class="stats-row">
+                  <div>
+                    <div class="count">0</div>
+                    <div>Today</div>
+                  </div>
+                  <div>
+                    <div class="count">0</div>
+                    <div>Last 20 Days</div>
+                  </div>
+                  <div>
+                    <div class="count">0</div>
+                    <div>All Time</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="admin-card">
+            <div class="content-admin-card">
+              <div class="content-text text-center">Page Views</div>
+              <div class="no-data">
+                There have been no visits on page as of yet
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="stat-item">
+                  <div>Top Visitor Cities</div>
+                  <div class="item-value">No Data Yet</div>
+                </div>
+                <div class="stat-item">
+                  <div>Top Referrers</div>
+                  <div class="item-value">No Referrer Data Yet</div>
+                </div>
+                <div class="stat-item">
+                  <div>New vs Returning</div>
+                  <div class="item-value">No Data Yet</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <a href="chat.html" class="btn btn-primary chat-btn">
+          <span class="m-icon chat-trigger"></span>
+        </a>
+
+        <div
+          tabindex="-1"
+          role="dialog"
+          class="modal fade"
+          aria-hidden="true"
+          data-backdrop="static"
+          id="publishProperty"
+          aria-labelledby="publishPropertyLabel"
+        >
+          <div
+            class="modal-dialog modal-lg modal-dialog-centered publish-property-modal"
+            role="document"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="modal-title" id="street"></div>
+                <div class="modal-subtitle" id="city"></div>
+              </div>
+              <div class="p-4">
+                <div class="text-center mb-5">
+                  <div class="mb-3">
+                    <span class="m-icon check-icon"></span>
+                  </div>
+                  <p id="publishPropertyLabel">
+                    You have successfully published your property website!
+                  </p>
+                </div>
+                <div class="text-center my-5">
+                  <p>
+                    Now that your property website is live, it's time to get
+                    people to see it.<br />
+                    Publish a target Facebook ad to reach potential buyers and
+                    generate leads.
+                  </p>
+                  <a href="" class="btn btn-primary">Create Facebook Ad</a>
+                </div>
+                <div class="text-center my-5">
+                  <p>
+                    Access the brochure section to create flyers, post cards,
+                    and other visual for advertising. If you don't want to make
+                    visuals yourself, order professional prints from our
+                    designers.
+                  </p>
+                  <a href="" class="btn btn-tertiary">Go to Brochures</a>
+                </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"
+                      >Property URL:</span
+                    >
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="https://abcstreet1235road.menaListing.com"
+                  />
+                  <div class="input-group-append">
+                    <button class="btn btn-primary">Change</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <script
+      type="text/javascript"
+      src="/node_modules/jquery/dist/jquery.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/node_modules/popper.js/dist/umd/popper.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/node_modules/bootstrap/dist/js/bootstrap.js"
+    ></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+    <script>
+      let propId = new URL(location.href).searchParams.get("id") || "1";
+      async function fetchSubNavList() {
+        const respJSON = await fetch("http://localhost:3000/properties");
+        const resp = await respJSON.json();
+        document.getElementById("subnav-list").innerHTML = resp
+          .map(
+            (property) => `
+                <li class="subnav-item">
+                    <a href="http://localhost:9000/manage-properties.html?id=${
+                      property.id
+                    }" 
+                        class="subnav-link 
+                        ${property.id === propId ? "active" : ""}">
+                        <span>${property.address}</span>
+                        <span class="text-bold">${property.status}</span>
+                    </a>
+                </li>`
+          )
+          .join(" ");
+      }
+
+      async function fetchPropertyDetails() {
+        const respJSON = await fetch(
+          "http://localhost:3000/property-details/" + propId
+        );
+        const resp = await respJSON.json();
+
+        document
+          .querySelectorAll("#street")
+          .forEach((el) => (el.innerHTML = resp.address.house));
+        document
+          .querySelectorAll("#city")
+          .forEach(
+            (el) =>
+              (el.innerHTML = resp.address.city + " " + resp.address.zip_code)
+          );
+        document
+          .getElementById("edit-btn")
+          .addEventListener(
+            "click",
+            () =>
+              (location.href = "https://property-details.html?id=" + resp.id)
+          );
+        document.getElementById("prop-domains").innerHTML = resp.urls
+          .map(
+            (url) =>
+              `<div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Copy</span>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="${url}"
+                  />
+                </div>
+              </div>`
+          )
+          .join(" ");
+      }
+
+      (function main() {
+        fetchSubNavList();
+        fetchPropertyDetails();
+      })();
+    </script>
+  </body>
 </html>

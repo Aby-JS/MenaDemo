@@ -201,7 +201,7 @@
           city = document.getElementById("addPropertyCity").value,
           zipCode = document.getElementById("addPropertyCountry").value;
 
-        let respJSON = await fetch("http://localhost:3000/propety-details", {
+        let respJSON = await fetch("http://localhost:3000/property-details", {
           method: "POST",
           body: JSON.stringify({
             address: {
@@ -223,7 +223,7 @@
           body: JSON.stringify({
             id: respData.id,
             address: `${street}, ${zipCode} ${city}`,
-            published: "Not Published",
+            status: "Not Published",
           }),
           headers: {
             "Content-Type": "application/json",
