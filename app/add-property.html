@@ -1,151 +1,240 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>mena</title>
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <!-- Place favicon.ico in the root directory -->
-        <!-- build:css styles/vendor.css -->
-        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
-        <!-- endbuild -->
-        <!-- build:css styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
-        <!-- build:js scripts/modernizr.js -->
-        <script src="scripts/modernizr.js"></script>
-        <!-- endbuild -->
-    </head>
-    <body>
-        <!--[if IE]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>mena</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <!-- endbuild -->
+    <!-- build:js scripts/modernizr.js -->
+    <script src="scripts/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
 
-        <div class="container-fluid">
-            <div class="row">
-                <!-- Sidebar -->
-                <nav class="sidebar">
-                    <div class="sidebar-column nav-column">
-                        <div class="logo text-center">
-                            <a href="#">
-                                <img src="images/admin-logo.png" alt="Mena Listing">
-                            </a>
-                        </div>
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">
-                                    <span class="m-icon size-32 dashboard"></span>
-                                    <span>Dashboard</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="manage-properties.html">
-                                    <span class="m-icon size-32 property"></span>
-                                    <span>Manage Properties</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="billing.html">
-                                    <span class="m-icon size-32 billing"></span>
-                                    <span>Billing</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="profile.html">
-                                    <span class="m-icon size-32 profile"></span>
-                                    <span>Profile</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="support.html">
-                                    <span class="m-icon size-32 support"></span>
-                                    <span>Support</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="sidebar-column subnav-column">
-                        <ul class="subnav">
-                            <li class="subnav-item">
-                                <a href="#" class="subnav-link active">Profile Information</a>
-                            </li>
-                            <li class="subnav-item">
-                                <a href="#" class="subnav-link">Default Settings</a>
-                            </li>
-                            <li class="subnav-item">
-                                <a href="#" class="subnav-link">Change Password</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-
-                <!-- Content Area -->
-                <main role="main" class="offset-2 col-10 admin-content-area">
-                    <div class="row admin-content-page-title align-items-center">
-                        <div class="col">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Account</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Properties</li>
-                                </ol>
-                            </nav>
-                        </div>
-                        <div class="col text-right">
-                            <a href="add-property.html" class="btn btn-primary">
-                                <span class="m-icon size-20 add"></span>
-                                <span>Add a Property</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="admin-card add-property-first-step">
-                        <div class="title-admin-card">
-                            <div class="title-text">Let's take the first step!</div>
-                            <div class="title-content">You are about to create your very first property listing. Add the following property details to continue:</div>
-                            <div class="title-content text-danger d-none">All fields marked with * are required!</div>
-                        </div>
-                        <div class="content-admin-card">
-                            <form class="mt-4" action="">
-                                <div class="form-group">
-                                    <label class="form-label" for="addPropertyStreet">Street *</label>
-                                    <input type="text" class="form-control" id="addPropertyStreet">
-                                </div>
-                                <div class="row mt-4">
-                                    <div class="col-3">
-                                        <div class="form-group">
-                                            <label class="form-label" for="addPropertyCity">City *</label>
-                                            <input type="text" class="form-control" id="addPropertyCity">
-                                        </div>
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="form-group">
-                                            <label class="form-label" for="addPropertyCountry">Country *</label>
-                                            <input type="text" class="form-control" id="addPropertyCountry">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-center mt-4">
-                                    <button type="button" disabled class="btn btn-outline-secondary">Add a Property</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </main>
-
-                <a href="chat.html" class="btn btn-primary chat-btn">
-                    <span class="m-icon chat-trigger"></span>
-                </a>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+          <div class="sidebar-column nav-column">
+            <div class="logo text-center">
+              <a href="#">
+                <img src="images/admin-logo.png" alt="Mena Listing" />
+              </a>
             </div>
-        </div>
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <span class="m-icon size-32 dashboard"></span>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="manage-properties.html">
+                  <span class="m-icon size-32 property"></span>
+                  <span>Manage Properties</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="billing.html">
+                  <span class="m-icon size-32 billing"></span>
+                  <span>Billing</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile.html">
+                  <span class="m-icon size-32 profile"></span>
+                  <span>Profile</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="support.html">
+                  <span class="m-icon size-32 support"></span>
+                  <span>Support</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-column subnav-column">
+            <ul class="subnav">
+              <li class="subnav-item">
+                <a href="#" class="subnav-link active">Profile Information</a>
+              </li>
+              <li class="subnav-item">
+                <a href="#" class="subnav-link">Default Settings</a>
+              </li>
+              <li class="subnav-item">
+                <a href="#" class="subnav-link">Change Password</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-        <!-- build:js scripts/vendor.js -->
-        <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
-        <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <!-- endbuild -->
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
-    </body>
+        <!-- Content Area -->
+        <main role="main" class="offset-2 col-10 admin-content-area">
+          <div class="row admin-content-page-title align-items-center">
+            <div class="col">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="index.html">Account</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Properties
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+          <div class="admin-card add-property-first-step">
+            <div class="title-admin-card">
+              <div class="title-text">Let's take the first step!</div>
+              <div class="title-content">
+                You are about to create your very first property listing. Add
+                the following property details to continue:
+              </div>
+              <div class="title-content text-danger d-none">
+                All fields marked with * are required!
+              </div>
+            </div>
+            <div class="content-admin-card">
+              <form class="mt-4" action="">
+                <div class="form-group">
+                  <label class="form-label" for="addPropertyStreet"
+                    >Street *</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="addPropertyStreet"
+                  />
+                </div>
+                <div class="row mt-4">
+                  <div class="col-3">
+                    <div class="form-group">
+                      <label class="form-label" for="addPropertyCity"
+                        >City *</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="addPropertyCity"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="form-group">
+                      <label class="form-label" for="addPropertyCountry"
+                        >Zip Code *</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="addPropertyCountry"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center mt-4">
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    id="addPropertyButton"
+                  >
+                    Add a Property
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </main>
+
+        <a href="chat.html" class="btn btn-primary chat-btn">
+          <span class="m-icon chat-trigger"></span>
+        </a>
+      </div>
+    </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <script
+      type="text/javascript"
+      src="/node_modules/jquery/dist/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/node_modules/bootstrap/dist/js/bootstrap.min.js"
+    ></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+    <script>
+      async function addProperty() {
+        console.log("is this working?");
+        let street = document.getElementById("addPropertyStreet").value,
+          city = document.getElementById("addPropertyCity").value,
+          zipCode = document.getElementById("addPropertyCountry").value;
+
+        let respJSON = await fetch("http://localhost:3000/propety-details", {
+          method: "POST",
+          body: JSON.stringify({
+            address: {
+              house: street,
+              city: city,
+              zip_code: zipCode,
+            },
+            published: false,
+            urls: [],
+            page_views: {},
+          }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+        let respData = await respJSON.json();
+        await fetch("http://localhost:3000/properties", {
+          method: "POST",
+          body: JSON.stringify({
+            id: respData.id,
+            address: `${street}, ${zipCode} ${city}`,
+            published: "Not Published",
+          }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+        window.location.href =
+          "http://localhost:9000/manage-properties.html?id=" + respData.id;
+      }
+      document
+        .getElementById("addPropertyButton")
+        .addEventListener("click", addProperty);
+    </script>
+  </body>
 </html>

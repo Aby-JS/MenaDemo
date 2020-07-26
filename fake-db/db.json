@@ -5,7 +5,11 @@
     "summary": "30% off your first order!",
     "description": {
       "mainText": "Now offering professional quality prints in various sizes finishes and paper weights.",
-      "bulletPoints": ["Flyers", "4-page folded brochures", "Sign-riders"]
+      "bulletPoints": [
+        "Flyers",
+        "4-page folded brochures",
+        "Sign-riders"
+      ]
     },
     "image": "../../images/admin-newest-feature-hero.png"
   },
@@ -61,6 +65,11 @@
       "id": "6",
       "address": "BBB Street, 134235 Some Road XYZ",
       "status": "Not Published"
+    },
+    {
+      "id": 7,
+      "address": "A-14 KDA Overseas Appt., Block 13-C, Gulshan-e-Iqbal, 75300 Karachi",
+      "published": "Not Published"
     }
   ],
   "propety-details": [
@@ -72,7 +81,10 @@
         "zip_code": 125625
       },
       "published": false,
-      "urls": ["https://domain1.com", "https://domain2.com"],
+      "urls": [
+        "https://domain1.com",
+        "https://domain2.com"
+      ],
       "page_views": {}
     },
     {
@@ -83,7 +95,10 @@
         "zip_code": 125625
       },
       "published": true,
-      "urls": ["https://domain1.com", "https://domain2.com"],
+      "urls": [
+        "https://domain1.com",
+        "https://domain2.com"
+      ],
       "page_views": {}
     },
     {
@@ -94,7 +109,10 @@
         "zip_code": 125625
       },
       "published": false,
-      "urls": ["https://domain1.com", "https://domain2.com"],
+      "urls": [
+        "https://domain1.com",
+        "https://domain2.com"
+      ],
       "page_views": {}
     },
     {
@@ -105,7 +123,10 @@
         "zip_code": 125625
       },
       "published": false,
-      "urls": ["https://domain1.com", "https://domain2.com"],
+      "urls": [
+        "https://domain1.com",
+        "https://domain2.com"
+      ],
       "page_views": {}
     },
     {
@@ -116,7 +137,10 @@
         "zip_code": 125625
       },
       "published": false,
-      "urls": ["https://domain1.com", "https://domain2.com"],
+      "urls": [
+        "https://domain1.com",
+        "https://domain2.com"
+      ],
       "page_views": {}
     },
     {
@@ -127,8 +151,22 @@
         "zip_code": 125625
       },
       "published": false,
-      "urls": ["https://domain1.com", "https://domain2.com"],
+      "urls": [
+        "https://domain1.com",
+        "https://domain2.com"
+      ],
       "page_views": {}
+    },
+    {
+      "address": {
+        "house": "A-14 KDA Overseas Appt., Block 13-C, Gulshan-e-Iqbal",
+        "city": "Karachi",
+        "zip_code": "75300"
+      },
+      "published": false,
+      "urls": [],
+      "page_views": {},
+      "id": 7
     }
   ],
   "billing": {
