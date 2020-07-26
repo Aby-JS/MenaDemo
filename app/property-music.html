@@ -1,0 +1,295 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>mena</title>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Place favicon.ico in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+        <!-- endbuild -->
+        <!-- build:css styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/modernizr.js -->
+        <script src="scripts/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if IE]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Sidebar -->
+                <nav class="sidebar subnav-active">
+                    <div class="sidebar-column nav-column">
+                        <div class="logo text-center">
+                            <a href="#">
+                                <img src="images/admin-logo.png" alt="Mena Listing">
+                            </a>
+                        </div>
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">
+                                    <span class="m-icon size-32 dashboard"></span>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="manage-properties.html">
+                                    <span class="m-icon size-32 property"></span>
+                                    <span>Manage Properties</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="billing.html">
+                                    <span class="m-icon size-32 billing"></span>
+                                    <span>Billing</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="profile.html">
+                                    <span class="m-icon size-32 profile"></span>
+                                    <span>Profile</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="support.html">
+                                    <span class="m-icon size-32 support"></span>
+                                    <span>Support</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-column subnav-column">
+                        <ul class="subnav">
+                            <li class="subnav-title">Property Info</li>
+                            <li class="subnav-item">
+                                <a href="property-details.html" class="subnav-link">Details</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="property-gallery.html" class="subnav-link">Photo Gallery</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="property-videos.html" class="subnav-link">Videos &amp; Virtual</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="property-music.html" class="subnav-link active">Music</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="property-docs-floorplans.html" class="subnav-link">Docs &amp; Floorplans</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="property-address-map.html" class="subnav-link">Address &amp; Map</a>
+                            </li>
+                            <li class="subnav-title">Settings</li>
+                            <li class="subnav-item">
+                                <a href="property-theme-contacts.html" class="subnav-link">Theme &amp; Contacts</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="property-lead-collection.html" class="subnav-link">Lead Collection</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="property-domains.html" class="subnav-link">Domains</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="property-advanced.html" class="subnav-link">Advanced</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="property-seo-social.html" class="subnav-link">SEO &amp; Social</a>
+                            </li>
+                            <li class="subnav-title">Marketing</li>
+                            <li class="subnav-item">
+                                <a href="property-brochures.html" class="subnav-link">Brochures</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- Content Area -->
+                <main role="main" class="offset-2 col-10 admin-content-area">
+                    <div class="row admin-content-page-title align-items-center">
+                        <div class="col">
+                            <div class="dropdown">
+                                <button
+                                    type="button"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    data-toggle="dropdown"
+                                    id="dropdownMenuButton"
+                                    class="btn btn-link dropdown-toggle mb-2 p-0">
+                                    <span class="m-icon size-20 info-icon"></span>
+                                    <!-- <span class="m-icon size-20 checker-icon"></span> -->
+                                    <span>Not Published</span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#publishProperty">Publish Property</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <div>Abc Street, 123 Road</div>
+                        </div>
+                        <div class="col text-right">
+                            <a href="#" class="btn btn-outline-secondary">Save</a>
+                            <a href="#" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+
+                    <div class="title-before-card">
+                        <div class="title-text">Virtual Tour Gallery</div>
+                    </div>
+
+                    <div class="m-tabs">
+                        <div class="title-before-card">
+                            <div class="title-text small-text">Current Track</div>
+                            <div class="title-content">Select your track from the playlist below or upload your own.</div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="flex-shrink-1">
+                                    <a href="#" data-toggle="modal" data-target="#addVirtualTour" class="btn btn-primary mt-3">Upload Music</a>
+                                </div>
+                                <div class="flex-shrink-1">
+                                    <nav class="nav nav-pills" id="musicTab" role="tablist">
+                                        <a role="tab"
+                                            href="#library"
+                                            id="library-tab"
+                                            data-toggle="tab"
+                                            aria-selected="true"
+                                            aria-controls="library"
+                                            class="flex-sm-fill text-sm-center nav-link active"
+                                        >Library</a>
+                                        <a role="tab"
+                                            href="#myMusic"
+                                            id="myMusic-tab"
+                                            data-toggle="tab"
+                                            aria-selected="true"
+                                            aria-controls="myMusic"
+                                            class="flex-sm-fill text-sm-center nav-link"
+                                        >My Music</a>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="library" role="tabpanel" aria-labelledby="library-tab">
+                                <div class="admin-card">
+                                    <div class="content-admin-card">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <a class="music-pill active">Creative Minds</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a class="music-pill">Once Again</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a class="music-pill">Inspire</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a class="music-pill">Perception</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a class="music-pill">Beyond the Line</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a class="music-pill">Dreams</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="myMusic" role="tabpanel" aria-labelledby="myMusic-tab">
+                                <div class="admin-card">
+                                    <div class="content-admin-card">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <a class="music-pill active">Creative Minds</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a class="music-pill">Once Again</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a class="music-pill">Inspire</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a class="music-pill">Perception</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a class="music-pill">Beyond the Line</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a class="music-pill">Dreams</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a class="music-pill active">Creative Minds</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a class="music-pill">Once Again</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a class="music-pill">Inspire</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <a href="chat.html" class="btn btn-primary chat-btn">
+                    <span class="m-icon chat-trigger"></span>
+                </a>
+
+                <div
+                    tabindex="-1"
+                    role="dialog"
+                    class="modal fade"
+                    aria-hidden="true"
+                    id="addVirtualTour"
+                    data-backdrop="static"
+                    aria-labelledby="addVirtualTourLabel">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal-title mb-0">
+                                    <div class="title-text" id="addVirtualTourLabel">Add 3D Tour</div>
+                                </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <form>
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <label class="form-label" for="virtualTourTitle">Title *</label>
+                                        <input type="text" class="form-control" id="virtualTourTitle">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="virtualTourURL">Virtual Tour URL *</label>
+                                        <input type="text" class="form-control" id="virtualTourURL">
+                                        <div class="sub-label">Paste the URL of your virtual tour above.</div>
+                                    </div>
+                                    <button class="btn btn-primary">Upload Tour</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- build:js scripts/vendor.js -->
+        <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- endbuild -->
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

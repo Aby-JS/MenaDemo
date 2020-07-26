@@ -1,0 +1,303 @@
+.admin-content-area {
+    padding: 48px;
+    min-height: 100vh;
+    background-color: $m-color-admin-content-area-bg;
+
+    .admin-content-page-title {
+        margin-bottom: 32px;
+    }
+}
+
+.welcome-msg {
+    padding: 48px 64px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: $m-color-admin-welcome-bg;
+
+    .welcome-title {
+        font-size: 20px;
+        margin-bottom: 12px;
+        @include font-weight-bold;
+        color: $m-color-admin-welcome-title;
+    }
+
+    .welcome-text {
+        font-size: 16px;
+        color: $m-color-content;
+    }
+
+    &.tight {
+        padding: 24px;
+    }
+}
+
+.page-view-title {
+
+    span {
+        font-size: 18px;
+        color: $m-color-content;
+        @include font-weight-bold;
+    }
+
+    input {
+        padding: 8px;
+        height: 48px;
+        border: none;
+        color: $m-color-content;
+    }
+
+    > * {
+        margin-right: 12px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.stats-row {
+    padding: 12px;
+    border-radius: 12px;
+    background-color: $m-color-white;
+    @include flex(flex, $align: center);
+
+    div {
+        min-width: 140px;
+        text-align: center;
+
+        div {
+            font-size: 14px;
+            color: $m-color-secondary-content;
+        }
+
+        .count {
+            font-size: 18px;
+            color: $m-color-active;
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.stat-item {
+
+    div {
+        font-size: 18px;
+        color: $m-color-content;
+
+        &.item-value {
+            color: $m-color-active;
+        }
+    }
+}
+
+.tag-drop-container {
+    background-color: $m-color-admin-form-control-bg;
+
+    textarea {
+        margin: 0;
+        width: 100%;
+        border: none;
+        display: block;
+        min-height: 300px;
+        background-color: transparent;
+    }
+}
+
+.inline-tag-list {
+    margin-top: 24px;
+    
+    a {
+        display: inline-block;
+        background-color: #c7d2f9;
+        padding: 12px 24px;
+        font-size: 12px;
+        color: #565656;
+        margin-right: 12px;
+        margin-bottom: 12px;
+
+        &:hover {
+            text-decoration: none;
+            background-color: darken(#c7d2f9, 5);
+        }
+    }
+}
+
+.drag-drop-img-upload-container {
+    z-index: 1;
+    min-height: 200px;
+    position: relative;
+    @include flex(flex, $align: center, $justify: center);
+
+    input[type="file"] {
+        z-index: 3;
+        opacity: 0;
+        visibility: hidden;
+        @include size(100%);
+        @include position(absolute, $top: 0, $left: 0);
+    }
+
+    .text-center {
+        z-index: 2;
+        position: relative;
+    }
+}
+
+.video-card {
+    height: 200px;
+}
+
+.video-thumb {
+    @include size(250px, 200px);
+    background-color: #d9d9d9;
+    @include position(absolute, $top: 0, $left: 0);
+    @include flex(flex, $align: center, $justify: center);
+}
+
+.property-video-tabs {
+
+    .nav.nav-pills {
+        z-index: 10;
+        @include size(200px, 40px);
+        @include position(absolute, $top:0, $right: 0);
+    }
+
+    .tab-content {
+        z-index: 9;
+    }
+
+    // .title-pos-abs {
+    //     @include size(calc(100% - 200px), 48px);
+    //     @include position(absolute, $top: 0, $left: 0);
+    // }
+}
+
+.mapouter {
+
+    .gmap_canvas {
+
+        iframe {
+            width: 100%;
+            height: 400px;
+        }
+    }
+}
+
+// .admin-card {
+//     padding: 56px;
+//     margin-bottom: 56px;
+//     border-radius: 10px;
+//     background-color: $m-color-white;
+//     box-shadow: 0 0 40px 9px $m-color-admin-card-box-shadow;
+
+//     &.active {
+//         box-shadow: 0 2px 0 0 #5d7eea, 0 0 40px 9px rgba(66, 66, 66, 0.08);
+
+//         * {
+//             color: $m-color-active;
+//         }
+//     }
+
+//     &.billing-card {
+//         padding: 24px;
+//         text-align: center;
+
+//         .card-title {
+//             font-size: 25px;
+//             margin-bottom: 32px;
+//             color: $m-color-black;
+//             text-transform: uppercase;
+//         }
+
+//         .card-subtitle {
+//             font-size: 16px;
+//             margin: 16px 0 24px;
+//             color: $m-color-black;
+//             text-transform: uppercase;
+//             @include font-weight-bold;
+//         }
+
+//         .card-content {
+//             font-size: 16px;
+//             color: $m-color-black;
+            
+//             > div {
+//                 margin-bottom: 8px;
+
+//                 &:last-child {
+//                     margin-bottom: 0;
+//                 }
+//             }
+
+//             span {
+//                 padding-left: 4px;
+
+//                 &:first-child {
+//                     padding-left: 0;
+//                 }
+//             }
+
+//             + .card-content {
+//                 margin-top: 32px;
+//             }
+//         }
+//     }
+
+//     &.card-sections {
+//         padding: 16px;
+//         @include flex(flex, $direction: column);
+
+//         .card-title {
+//             flex-shrink: 1;
+//             padding-bottom: 8px;
+//             border-bottom: 1px solid #5e81f4;
+
+//             .btn {
+//                 padding: 0;
+//                 color: $m-color-content;
+//             }
+//         }
+
+//         .card-content {
+//             flex-grow: 1;
+//             min-height: 150px;
+//             @include flex(flex, $direction: column, $justify: center)
+
+//             p, dt, dd {
+//                 font-size: 16px;
+//                 color: $m-color-content;
+//             }
+
+//             dt, dd {
+//                 display: inline-block;
+//                 vertical-align: top;
+//             }
+
+//             dt {
+//                 min-width: 130px;
+//             }
+
+//             dd {
+//                 margin: 0;
+//             }
+//         }
+
+//         .card-actions {
+//             flex-shrink: 1;
+//         }
+//     }
+
+//     &:last-child {
+//         margin-bottom: 0;
+//     }
+// }
+
+.new-features {
+
+    .feature-item {
+        margin-bottom: 32px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,129 @@
+.sidebar {
+    width: calc(100% / 6);
+    border-right: 1px solid $m-color-admin-sidebar-border;
+    @include position(fixed, $top: 0, $left: 0, $bottom: 0);
+
+    .sidebar-column {
+        height: 100%;
+        padding: 32px 0;
+        @include flex(flex, $direction: column);
+    
+        &.nav-column {
+            background-color: $m-color-white;
+        }
+
+        &.subnav-column {
+            flex-grow: 1;
+            display: none;
+            background-color: #f3f3f3;
+
+            &:before {
+                content: '';
+                height: 30%;
+            }
+        }
+    }
+
+    .logo {
+        height: 30%;
+
+        a {
+            display: block;
+        }
+
+        img {
+            margin: 0;
+            display: inline-block;
+        }
+    }
+
+    .nav {
+        flex-grow: 1;
+        max-height: 350px;
+        @include flex(flex, $direction: column, $justify: space-between);
+
+        .nav-link {
+            font-size: 16px;
+            padding: 0 32px;
+            color: $m-color-admin-nav-link;
+            @include flex(flex, $align: center);
+
+            span {
+                
+                &:last-child {
+                    padding-left: 10px;
+                }
+            }
+
+            &.active {
+                color: $m-color-black;
+                @include font-weight-bold;
+                box-shadow: inset -2px 0 0 0 $m-color-admin-nav-link-border;
+            }
+
+            &:hover {
+                color: $m-color-black;
+                box-shadow: inset -1px 0 0 0 $m-color-admin-nav-link-border;
+            }
+        }
+    }
+
+    .subnav {
+        margin-top: -10px;
+        @extend %list-unstyled;
+
+        .subnav-title {
+            padding: 12px;
+            display: block;
+            font-size: 14px;
+            color: $m-color-active;
+            text-transform: uppercase;
+        }
+
+        .subnav-item {
+            margin-bottom: 4px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        
+        .subnav-link {
+            padding: 12px;
+            display: block;
+            font-size: 14px;
+            color: $m-color-admin-nav-link;
+
+            &.active {
+                background-color: $m-color-white;
+            }
+
+            span {
+                display: block;
+            }
+
+            &:hover {
+                text-decoration: none;
+                background-color: $m-color-white;
+            }
+        }
+    }
+
+    &.subnav-active {
+        display: flex;
+
+        .sidebar-column {
+
+            &.nav-column {
+
+                .nav .nav-link span:last-child {
+                    display: none;
+                }
+            }
+
+            &.subnav-column {
+                display: flex;
+            }
+        }
+    }
+}

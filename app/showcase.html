@@ -1,0 +1,326 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>mena</title>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Place favicon.ico in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+        <!-- endbuild -->
+        <!-- build:css styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/modernizr.js -->
+        <script src="scripts/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if IE]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Sidebar -->
+                <nav class="sidebar">
+                    <div class="sidebar-column nav-column">
+                        <div class="logo text-center">
+                            <a href="#">
+                                <img src="images/admin-logo.png" alt="Mena Listing">
+                            </a>
+                        </div>
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">
+                                    <span class="m-icon size-32 dashboard"></span>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="manage-properties.html">
+                                    <span class="m-icon size-32 property"></span>
+                                    <span>Manage Properties</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="billing.html">
+                                    <span class="m-icon size-32 billing"></span>
+                                    <span>Billing</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="profile.html">
+                                    <span class="m-icon size-32 profile"></span>
+                                    <span>Profile</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="support.html">
+                                    <span class="m-icon size-32 support"></span>
+                                    <span>Support</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-column subnav-column">
+                    </div>
+                </nav>
+
+                <!-- Content Area -->
+                <main role="main" class="offset-2 col-10 admin-content-area">
+
+                    <div class="mb-5">
+                        <h5>Admin Card with No Data</h5>
+                        <div class="admin-card">
+                            <div class="content-admin-card">
+                                <div class="no-data">There is no data here</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <h5>Admin Card with Title</h5>
+                        <div class="admin-card">
+                            <div class="title-admin-card">
+                                <div class="title-text">Introducing</div>
+                            </div>
+                            <div class="content-admin-card">
+                                <div class="no-data">There is no data here</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <h5>Admin Card with Footer</h5>
+                        <div class="admin-card">
+                            <div class="content-admin-card">
+                                <div class="no-data">There is no data here</div>
+                            </div>
+                            <div class="footer-admin-card">
+                                <div class="footer-text">http://abcstreet1235road.parkellis.com<br>
+                                Abc Street, 1235 Road<br>
+                                This property at Abc Street, 1235 Road offers...</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <h5>Admin Card with Title Above</h5>
+                        <div class="title-before-card">
+                            <div class="title-text">Property Details</div>
+                        </div>
+                        <div class="admin-card">
+                            <div class="content-admin-card">
+                                <div class="no-data">There is no data here</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <h5>Admin Card with Everything</h5>
+                        <div class="title-before-card">
+                            <div class="title-text">Property Details</div>
+                        </div>
+                        <div class="admin-card">
+                            <div class="title-admin-card">
+                                <div class="title-text">Introducing</div>
+                            </div>
+                            <div class="content-admin-card">
+                                <div class="no-data">There is no data here</div>
+                            </div>
+                            <div class="footer-admin-card">
+                                <div class="footer-text">http://abcstreet1235road.parkellis.com<br>
+                                Abc Street, 1235 Road<br>
+                                This property at Abc Street, 1235 Road offers...</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <h5>Simple form in Admin Card</h5>
+                        <div class="title-before-card">
+                            <div class="title-text">Listing Status</div>
+                        </div>
+                        <div class="admin-card">
+                            <div class="content-admin-card">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label class="form-label" for="propertyName">Property Name *</label>
+                                        <input type="text" class="form-control" id="propertyName">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row align-items-center">
+                                            <div class="col-7">
+                                                <label class="form-label" for="propertyName">Property Name *</label>
+                                            </div>
+                                            <div class="col-5">
+                                                <div class="label-hint">
+                                                    <a href="#">Change Currency</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="text" class="form-control" id="propertyName">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="propertyName">Property Name *</label>
+                                        <select class="form-control">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <div class="sub-label">This field is optional, you can hide pricing by leaving it blank</div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </main>
+            </div>
+        </div>
+
+        <!-- Login -->
+        <div
+            tabindex="-1"
+            role="dialog"
+            id="loginModal"
+            class="modal fade"
+            aria-hidden="true"
+            data-backdrop="static"
+            aria-labelledby="loginModalLabel">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Login to your Mena Account</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="loginModalEmail">Email</label>
+                                <input type="text" class="form-control" id="loginModalEmail">
+                            </div>
+                            <div class="form-group">
+                                <label for="loginModalPassword">Password</label>
+                                <input type="password" class="form-control" id="loginModalPassword">
+                            </div>
+                            <div class="form-group text-right">
+                                <a id="forgotPasswordModalTrigger" href="#">Forgot your password?</a>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center align-items-center w-100 m-0">
+                                <div class="w-50">
+                                    <button type="button" class="btn btn-primary btn-block mb-2">Log in</button>
+                                </div>
+                                <div class="flex-shrink-1">
+                                    <button type="button" id="createAccoundModalTrigger" class="btn btn-link text-center mb-2">Create New Account</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Signup -->
+        <div
+            tabindex="-1"
+            role="dialog"
+            id="signupModal"
+            class="modal fade"
+            aria-hidden="true"
+            data-backdrop="static"
+            aria-labelledby="signupModalLabel">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signupModalLabel">Sign Up for Mena for Free!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="signupModalName">Name</label>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" id="signupModalName" placeholder="First">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" id="signupModalName" placeholder="Last">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="loginModalEmail">Email</label>
+                                <input type="text" class="form-control" id="loginModalEmail">
+                            </div>
+                            <div class="form-group">
+                                <label for="loginModalPassword">Password</label>
+                                <input type="password" class="form-control" id="loginModalPassword">
+                            </div>
+                            <div class="d-flex flex-column justify-content-center align-items-center w-100 m-0">
+                                <div class="w-50">
+                                    <button type="button" class="btn btn-primary btn-block mb-2">Create New Account</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Forgot Password -->
+        <div
+            tabindex="-1"
+            role="dialog"
+            class="modal fade"
+            aria-hidden="true"
+            data-backdrop="static"
+            id="forgotPasswordModal"
+            aria-labelledby="signupModalLabel">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signupModalLabel">Reset your Password via Email</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="forgotPasswordModalEmail">Email</label>
+                                <input type="text" class="form-control" id="forgotPasswordModalEmail">
+                            </div>
+                            <div class="d-flex flex-column justify-content-center align-items-center w-100 m-0">
+                                <div class="w-50">
+                                    <button type="button" class="btn btn-primary btn-block mb-2">Reset</button>
+                                </div>
+                                <div class="flex-shrink-1">
+                                    <button type="button" id="loginModalTrigger" class="btn btn-link text-center mb-2">Back to Sign In</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- build:js scripts/vendor.js -->
+        <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- endbuild -->
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

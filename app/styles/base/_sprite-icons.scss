@@ -1,0 +1,194 @@
+.share-btn {
+    display: inline-block;
+    vertical-align: middle;
+    @include size(270px, 80px);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url('../images/social-icons.png');
+
+    &.fb {
+        background-position: 0 0;
+    }
+
+    &.tw {
+        background-position: 0 -80px;
+    }
+
+    &.in {
+        background-position: 0 -160px;
+    }
+
+    &.email {
+        background-position: 0 -240px;
+    }
+}
+
+.m-icon {
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url('../images/sprite.png');
+
+    &.size-18 {
+        @include size(18px);
+    }
+
+    &.size-20 {
+        @include size(20px);
+    }
+
+    &.size-24 {
+        @include size(24px);
+    }
+
+    &.size-32 {
+        @include size(32px);
+    }
+
+    &.size-100 {
+        @include size(100px);
+    }
+
+    &.dashboard {
+        background-position: 0px 0px;
+    }
+
+    &.property {
+        background-position: -50px 0px;
+    }
+
+    &.billing {
+        background-position: -100px 0px;
+    }
+
+    &.profile {
+        background-position: -150px 0px;
+    }
+
+    &.support {
+        background-position: -200px 0px;
+    }
+
+    &.add {
+        background-position: -300px 0px;
+    }
+
+    &.info-icon {
+        background-position: -350px -50px;
+    }
+
+    &.checker-icon {
+        background-position: -450px -50px;
+    }
+
+    &.chat-trigger {
+        @include size(36px, 32px);
+        background-position: -250px -50px;
+    }
+
+    &.activate-icon {
+        @include size(48px, 32px);
+        background-position: -350px 0;
+    }
+
+    &.fb-ads {
+        @include size(200px, 50px);
+        background-position: 0 -350px;
+    }
+
+    &.graph-icon {
+        @include size(37px, 19px);
+        background-position: -450px 0;
+    }
+
+    &.share-reports {
+        @include size(100px);
+        background-position: -200px -350px;
+    }
+
+    &.check-icon {
+        @include size(40px);
+        background-position: -400px -50px;
+    }
+
+    &.agent {
+        background-position: 0 -250px;
+    }
+
+    &.broker {
+        background-position: -200px -250px;
+    }
+
+    &.filter-icon {
+        background-position: -300px -50px;
+    }
+
+    &.export-icon {
+        background-position: -400px 0;
+    }
+
+    &.img-upload-icon {
+        @include size(150px, 113px);
+        background-position: 0 -450px;
+    }
+
+    &.multiple-files-icon {
+        @include size(150px, 125px);
+        background-position: -150px -450px;
+    }
+
+    &.add-content {
+        @include size(96px);
+        background-position: -300px -350px;
+
+        &:hover {
+            background-position: -400px -350px;
+        }
+    }
+
+    &.video-icon {
+        @include size(96px, 80px);
+        background-position: -300px -450px;
+    }
+
+    &.virtual-icon {
+        @include size(96px, 64px);
+        background-position: -400px -450px;
+    }
+
+    &.file-upload-icon {
+        @include size(89px, 116px);
+        background-position: 0 -600px;
+    }
+}
+
+.active {
+    .dashboard {
+        background-position: 0px -50px;
+    }
+
+    .property {
+        background-position: -50px -50px;
+    }
+
+    .billing {
+        background-position: -100px -50px;
+    }
+
+    .profile {
+        background-position: -150px -50px;
+    }
+
+    .support {
+        background-position: -200px -50px;
+    }
+
+    .agent {
+        background-position: -100px -250px;
+    }
+
+    .broker {
+        background-position: -300px -250px;
+    }
+}

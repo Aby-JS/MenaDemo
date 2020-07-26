@@ -1,0 +1,58 @@
+.btn {
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    @include font-weight-light;
+    @include flex(inline-flex, $align: center, $justify: center);
+
+    .m-icon {
+        margin-right: 10px;
+    }
+}
+
+.btn-primary {
+    background-color: $m-color-btn-primary;
+
+    &:hover {
+        background-color: $m-color-btn-primary-hover;
+    }
+
+    &.btn-flat {
+        color: $m-color-btn-primary;
+
+        &:hover {
+            color: $m-color-btn-primary-hover;
+        }
+    }
+}
+
+.btn-outline-primary {
+    border-color: $m-color-btn-primary;
+    color: $m-color-btn-primary;
+
+    &:hover {
+        background-color: $m-color-btn-primary;
+    }
+}
+
+.btn-flat {
+    padding: 0;
+    border-color: transparent;
+    background-color: transparent;
+
+    &:hover {
+        border-color: transparent;
+        background-color: transparent;
+    }
+}
+
+.btn-tertiary {
+    color: $m-color-white;
+    background-color: $m-color-btn-tertiary;
+
+    &:hover {
+        color: $m-color-white;
+        background-color: $m-color-btn-tertiary-hover;
+    }
+}

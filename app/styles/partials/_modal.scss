@@ -1,0 +1,200 @@
+.modal {
+
+    .modal-header {
+        height: 64px;
+        @include flex(flex, $align: center);
+
+        .close {
+            height: 100%;
+            padding: 0 10px;
+            margin: 0;
+
+            span {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .modal-title {
+        font-size: 28px;
+        margin-bottom: 16px;
+        color: $m-color-black;
+        @include font-weight-bold;
+
+        .title-text {
+            font-size: 20px;
+            color: $m-color-black;
+            @include font-weight-bold;
+        }
+
+        .title-content {
+            font-size: 16px;
+            margin-top: 12px;
+            color: $m-color-content;
+        }
+    }
+
+    p {
+        font-size: 16px;
+        color: $m-color-content;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .modal-content {
+        border-radius: 16px;
+
+        .content-text {
+            font-size: 16px;
+            color: $m-color-content;
+            margin-bottom: 12px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &.right {
+    
+        .modal-dialog {
+            margin: auto;
+            width: 480px;
+            height: 100%;
+            position: fixed;
+            @include transform(translate3d(0%, 0, 0));
+        }
+    
+        .modal-content {
+            height: 100%;
+            overflow-y: auto;
+            border-radius: 0;
+        }
+    
+        .modal-body {
+            padding: 15px 15px 80px;
+        }
+
+        &.fade {
+
+            .modal-dialog {
+                right: -480px;
+                -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+                   -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+                     -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+                        transition: opacity 0.3s linear, right 0.3s ease-out;
+            }
+
+            &.in .modal-dialog {
+                right: 0;
+            }
+        }
+    }
+}
+
+.account-type-selection {
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    > div {
+        margin-right: 32px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .admin-card {
+        @include size(280px, 298px);
+
+        .content-admin-card {
+            @include flex(flex, $direction: column, $justify: space-around, $align: center);
+
+            div {
+                font-size: 20px;
+                color: $m-color-content;
+            }
+        }
+
+        &:hover {
+            box-shadow: 0 2px 0 0 #5d7eea, 0 0 40px 9px rgba(66, 66, 66, 0.08);
+
+            .agent {
+                background-position: -100px -250px;
+            }
+
+            .broker {
+                background-position: -300px -250px;
+            }
+        }
+    }
+}
+
+.theme-thumb {
+    display: block;
+    margin: 0 0 24px;
+    color: $m-color-secondary-content;
+
+    .theme-title {
+        font-size: 16px;
+        margin-bottom: 8px;
+        color: $m-color-secondary-content;
+    }
+
+    img {
+        margin: 0;
+        width: 100%;
+        display: block;
+    }
+
+    &.active {
+        cursor: default;
+
+        img {
+            border: 2px solid $m-color-btn-primary;
+        }
+    }
+}
+
+.publish-property-modal {
+
+    .modal-header {
+        height: auto;
+        display: block;
+        padding: 25px 20px;
+        border-bottom: none;
+        background-color: #eff2fe;
+    }
+
+    .modal-title {
+        font-size: 20px;
+        margin-bottom: 0;
+        color: $m-color-black;
+        @include font-weight-bold;
+    }
+
+    .modal-subtitle {
+        font-size: 16px;
+        margin-top: 12px;
+        color: $m-color-content;
+    }
+
+    .input-group {
+        height: 52px;
+
+        .input-group-text {
+            border-right-color: transparent;
+            background-color: $m-color-admin-form-control-bg;
+        }
+
+        input.form-control {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            height: 52px;
+            border-left-color: transparent;
+            background-color: $m-color-admin-form-control-bg;
+        }
+    }
+}

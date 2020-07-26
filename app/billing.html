@@ -1,0 +1,375 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>mena</title>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Place favicon.ico in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+        <!-- endbuild -->
+        <!-- build:css styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/modernizr.js -->
+        <script src="scripts/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if IE]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Sidebar -->
+                <nav class="sidebar">
+                    <div class="sidebar-column nav-column">
+                        <div class="logo text-center">
+                            <a href="#">
+                                <img src="images/admin-logo.png" alt="Mena Listing">
+                            </a>
+                        </div>
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">
+                                    <span class="m-icon size-32 dashboard"></span>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="manage-properties.html">
+                                    <span class="m-icon size-32 property"></span>
+                                    <span>Manage Properties</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="billing.html">
+                                    <span class="m-icon size-32 billing"></span>
+                                    <span>Billing</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="profile.html">
+                                    <span class="m-icon size-32 profile"></span>
+                                    <span>Profile</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="support.html">
+                                    <span class="m-icon size-32 support"></span>
+                                    <span>Support</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-column subnav-column">
+                        <ul class="subnav">
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link active">Profile Information</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Default Settings</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="#" class="subnav-link">Change Password</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- Content Area -->
+                <main role="main" class="offset-2 col-10 admin-content-area">
+                    <div class="row admin-content-page-title align-items-center">
+                        <div class="col">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Account</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Billing</li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="col text-right">
+                            <a href="add-property.html" class="btn btn-primary">
+                                <span class="m-icon size-20 add"></span>
+                                <span>Add a Property</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="m-tabs">
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="flex-shrink-1">
+                                <nav class="nav nav-pills flex-column flex-sm-row" id="billingTab" role="tablist">
+                                    <a role="tab"
+                                        href="#monthly"
+                                        id="monthly-tab"
+                                        data-toggle="tab"
+                                        aria-selected="true"
+                                        aria-controls="monthly"
+                                        class="flex-sm-fill text-sm-center nav-link active"
+                                    >Monthly Billing</a>
+                                    <a role="tab"
+                                        href="#annual"
+                                        id="annual-tab"
+                                        data-toggle="tab"
+                                        aria-selected="true"
+                                        aria-controls="annual"
+                                        class="flex-sm-fill text-sm-center nav-link"
+                                    >Annual Billing</a>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="monthly" role="tabpanel" aria-labelledby="monthly-tab">
+                                <div class="row row-eq-height mb-4">
+                                    <div class="col-3">
+                                        <div class="admin-card billing-card h-100">
+                                            <div class="title-admin-card text-center">
+                                                <div class="title-text text-uppercase">Starter</div>
+                                            </div>
+                                            <div class="content-admin-card text-center">
+                                                <div class="content-title">105.00 AED</div>
+                                                <div class="content-sub-title text-uppercase">Per Month</div>
+                                                <div class="content-text">
+                                                    <span class="text-bold pr-1">1</span>
+                                                    <span>Active Listing</span>
+                                                </div>
+                                                <div class="content-text">
+                                                    <span class="text-bold pr-1">2</span>
+                                                    <span>Listing Agents</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-admin-card text-center">
+                                                <button type="button" class="btn btn-outline-secondary mt-4">Choose Plan</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="admin-card billing-card h-100">
+                                            <div class="title-admin-card text-center">
+                                                <div class="title-text text-uppercase">Plus</div>
+                                            </div>
+                                            <div class="content-admin-card text-center">
+                                                <div class="content-title">215.00 AED</div>
+                                                <div class="content-sub-title text-uppercase">Per Month</div>
+                                                <div class="content-text">
+                                                    <span class="text-bold pr-1">5</span>
+                                                    <span>Active Listing</span>
+                                                </div>
+                                                <div class="content-text">
+                                                    <span class="text-bold pr-1">5</span>
+                                                    <span>Listing Agents</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-admin-card text-center">
+                                                <button type="button" class="btn btn-outline-secondary mt-4">Choose Plan</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="admin-card billing-card h-100">
+                                            <div class="title-admin-card text-center">
+                                                <div class="title-text text-uppercase">Pro</div>
+                                            </div>
+                                            <div class="content-admin-card text-center">
+                                                <div class="content-title">435.00 AED</div>
+                                                <div class="content-sub-title text-uppercase">Per Month</div>
+                                                <div class="content-text">
+                                                    <span class="text-bold pr-1">25</span>
+                                                    <span>Active Listing</span>
+                                                </div>
+                                                <div class="content-text">
+                                                    <span class="text-bold pr-1">10</span>
+                                                    <span>Listing Agents</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-admin-card text-center">
+                                                <button type="button" class="btn btn-outline-secondary mt-4">Choose Plan</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="admin-card billing-card h-100">
+                                            <div class="title-admin-card text-center">
+                                                <div class="title-text text-uppercase">Broker</div>
+                                            </div>
+                                            <div class="content-admin-card text-center">
+                                                <div class="content-title">915.00 AED</div>
+                                                <div class="content-sub-title text-uppercase">Per Month</div>
+                                                <div class="content-text">
+                                                    <span class="text-bold pr-1">Unlimited</span>
+                                                    <span>Active Listing</span>
+                                                </div>
+                                                <div class="content-text">
+                                                    <span class="text-bold pr-1">15</span>
+                                                    <span>Listing Agents</span>
+                                                </div>
+                                                <div class="content-text">Additional Agent accounts as low as 22 AED per ,month</div>
+                                            </div>
+                                            <div class="footer-admin-card text-center">
+                                                <button type="button" class="btn btn-primary mt-4">Choose Plan</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="annual" role="tabpanel" aria-labelledby="annual-tab">
+                                <div class="row row-eq-height mb-4">
+                                    <div class="col-3">
+                                        <div class="admin-card billing-card h-100">
+                                            <div class="title-admin-card text-center">
+                                                <div class="title-text text-uppercase">Starter</div>
+                                            </div>
+                                            <div class="content-admin-card text-center">
+                                                <div class="content-title">1,055.00 AED</div>
+                                                <div class="content-sub-title text-uppercase">Per Month</div>
+                                                <div class="content-text">
+                                                    <span class="text-bold pr-1">1</span>
+                                                    <span>Active Listing</span>
+                                                </div>
+                                                <div class="content-text">
+                                                    <span class="text-bold pr-1">2</span>
+                                                    <span>Listing Agents</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-admin-card text-center">
+                                                <button type="button" class="btn btn-outline-secondary mt-4">Choose Plan</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="admin-card billing-card h-100">
+                                            <div class="title-admin-card text-center">
+                                                <div class="title-text text-uppercase">Plus</div>
+                                            </div>
+                                            <div class="content-admin-card text-center">
+                                                <div class="content-title">2,160.00 AED</div>
+                                                <div class="content-sub-title text-uppercase">Per Month</div>
+                                                <div class="content-text">
+                                                    <span class="text-bold pr-1">5</span>
+                                                    <span>Active Listing</span>
+                                                </div>
+                                                <div class="content-text">
+                                                    <span class="text-bold pr-1">5</span>
+                                                    <span>Listing Agents</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-admin-card text-center">
+                                                <button type="button" class="btn btn-outline-secondary mt-4">Choose Plan</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="admin-card billing-card h-100">
+                                            <div class="title-admin-card text-center">
+                                                <div class="title-text text-uppercase">Pro</div>
+                                            </div>
+                                            <div class="content-admin-card text-center">
+                                                <div class="content-title">4,365.00 AED</div>
+                                                <div class="content-sub-title text-uppercase">Per Month</div>
+                                                <div class="content-text">
+                                                    <span class="text-bold pr-1">25</span>
+                                                    <span>Active Listing</span>
+                                                </div>
+                                                <div class="content-text">
+                                                    <span class="text-bold pr-1">10</span>
+                                                    <span>Listing Agents</span>
+                                                </div>
+                                            </div>
+                                            <div class="footer-admin-card text-center">
+                                                <button type="button" class="btn btn-outline-secondary mt-4">Choose Plan</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="admin-card billing-card h-100">
+                                            <div class="title-admin-card text-center">
+                                                <div class="title-text text-uppercase">Broker</div>
+                                            </div>
+                                            <div class="content-admin-card text-center">
+                                                <div class="content-title">915.00 AED</div>
+                                                <div class="content-sub-title text-uppercase">Per Month</div>
+                                                <div class="content-text">
+                                                    <span class="text-bold pr-1">Unlimited</span>
+                                                    <span>Active Listing</span>
+                                                </div>
+                                                <div class="content-text">
+                                                    <span class="text-bold pr-1">15</span>
+                                                    <span>Listing Agents</span>
+                                                </div>
+                                                <div class="content-text">Additional Agent accounts as low as 22 AED per ,month</div>
+                                            </div>
+                                            <div class="footer-admin-card text-center">
+                                                <button type="button" class="btn btn-primary mt-4">Choose Plan</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-eq-height mb-4">
+                        <div class="col-6">
+                            <div class="admin-card h-100">
+                                <div class="title-admin-card">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-grow-1 title-text">Current Plan</div>
+                                        <div class="flex-shrink-1">
+                                            <a href="#">+ Add Coupon</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-admin-card">
+                                    <div class="content-text">Free Trial</div>
+                                    <div class="content-text">Trial Expires: Aug 3, 2020</div>
+                                </div>
+                                <div class="footer-admin-card">
+                                    <a href="#" class="btn btn-primary btn-flat">Upgrade Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="admin-card h-100">
+                                <div class="title-admin-card">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-grow-1 title-text">Payment Method</div>
+                                        <div class="flex-shrink-1">
+                                            <a href="#">Manage Cards</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-admin-card">
+                                    <div class="no-data">No Pyament Method Selected</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-before-card">
+                        <div class="title-text">Order History</div>
+                    </div>
+                    <div class="admin-card">
+                        <div class="content-admin-card">
+                            <div class="no-data">Nothing to see here. Place an order to be able to see order history.</div>
+                        </div>
+                    </div>
+                </main>
+
+                <a href="chat.html" class="btn btn-primary chat-btn">
+                    <span class="m-icon chat-trigger"></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- build:js scripts/vendor.js -->
+        <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- endbuild -->
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

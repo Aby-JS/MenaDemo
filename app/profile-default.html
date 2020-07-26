@@ -1,0 +1,548 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>mena</title>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Place favicon.ico in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+        <!-- endbuild -->
+        <!-- build:css styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/modernizr.js -->
+        <script src="scripts/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if IE]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Sidebar -->
+                <nav class="sidebar subnav-active">
+                    <div class="sidebar-column nav-column">
+                        <div class="logo text-center">
+                            <a href="#">
+                                <img src="images/admin-logo.png" alt="Mena Listing">
+                            </a>
+                        </div>
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">
+                                    <span class="m-icon size-32 dashboard"></span>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="manage-properties.html">
+                                    <span class="m-icon size-32 property"></span>
+                                    <span>Manage Properties</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="billing.html">
+                                    <span class="m-icon size-32 billing"></span>
+                                    <span>Billing</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="profile.html">
+                                    <span class="m-icon size-32 profile"></span>
+                                    <span>Profile</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="support.html">
+                                    <span class="m-icon size-32 support"></span>
+                                    <span>Support</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-column subnav-column">
+                        <ul class="subnav">
+                            <li class="subnav-item">
+                                <a href="profile.html" class="subnav-link">Profile Information</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="profile-default.html" class="subnav-link active">Default Settings</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="profile-password.html" class="subnav-link">Change Password</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- Content Area -->
+                <main role="main" class="offset-2 col-10 admin-content-area">
+                    <div class="row admin-content-page-title align-items-center">
+                        <div class="col">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="profile.html">Account</a></li>
+                                    <li class="breadcrumb-item active">Default Settings</li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="col text-right">
+                            <a href="add-property.html" class="btn btn-primary">
+                                <span class="m-icon size-20 add"></span>
+                                <span>Add a Property</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Social and Address -->
+                    <div class="row">
+                        <div class="col-7">
+                            <div class="title-before-card">
+                                <div class="text-right">
+                                    <a href="#" data-toggle="modal" data-target="#editAgentInfo">Edit</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="title-before-card">
+                                <div class="text-right">
+                                    <a href="#" data-toggle="modal" data-target="#editAgentAddress">Edit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-eq-height mb-4">
+                        <div class="col-7">
+                            <div class="admin-card h-100">
+                                <div class="content-admin-card">
+                                    <div class="content-title">Meriton Sahiti</div>
+                                    <div class="content-text">sahiti.meritoni@gmail.com</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="admin-card h-100">
+                                <div class="content-admin-card">
+                                    <div class="no-data">Add Address</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Disclaimer, Logo and Theme -->
+                    <div class="row">
+                        <div class="col-7">
+                            <div class="title-before-card">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1">
+                                        <div class="title-text small-text">Disclaimer:</div>
+                                    </div>
+                                    <div class="flex-shrink-1">
+                                        <a href="#" data-toggle="modal" data-target="#editPropertyDisclaimer">Edit</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="title-before-card">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1">
+                                        <div class="title-text small-text">Logo:</div>
+                                    </div>
+                                    <div class="flex-shrink-1">
+                                        <a href="#" data-toggle="modal" data-target="#chooseLogo">Edit</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-eq-height">
+                        <div class="col-7">
+                            <div class="admin-card h-100">
+                                <div class="content-admin-card">
+                                    <div class="no-data">Click to add a custom disclamer</div>
+                                </div>
+                                <div class="footer-admin-card">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">Include Equal Housing Icon</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">Include Realtor Icon</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="admin-card">
+                                <div class="content-admin-card">
+                                    <div class="no-data">Add Default Logo</div>
+                                </div>
+                            </div>
+                            <div class="title-before-card">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1">
+                                        <div class="title-text small-text">Theme:</div>
+                                    </div>
+                                    <div class="flex-shrink-1">
+                                        <a href="#" data-toggle="modal" data-target="#selectTheme">Edit</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="admin-card">
+                                <div class="content-admin-card">
+                                    <div class="no-data">Set Default Theme</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <a href="chat.html" class="btn btn-primary chat-btn">
+                    <span class="m-icon chat-trigger"></span>
+                </a>
+
+                <!-- Edit Property Disclaimer -->
+                <div
+                    tabindex="-1"
+                    role="dialog"
+                    id="editPropertyDisclaimer"
+                    class="modal right fade in"
+                    aria-labelledby="propertyDisclaimerLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal-title mb-0">
+                                    <div class="title-text" id="propertyDisclaimerLabel">Edit Property Disclaimer</div>
+                                </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label class="form-label" for="propertyDisclaimerUsage">Property Disclaimer Usage</label>
+                                        <select class="form-control" id="propertyDisclaimerUsage">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="propertyDisclaimerTextarea">Property Disclaimer</label>
+                                        <textarea class="form-control" id="propertyDisclaimerTextarea" rows="5"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Save Disclaimer</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Edit Agent Address -->
+                <div
+                    tabindex="-1"
+                    role="dialog"
+                    id="editAgentAddress"
+                    class="modal right fade in"
+                    aria-labelledby="agentAddressLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal-title mb-0">
+                                    <div class="title-text" id="agentAddressLabel">Edit Agents Address</div>
+                                </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label class="form-label" for="agentAddressCountry">Country</label>
+                                        <select class="form-control" id="agentAddressCountry">
+                                            <option>Dubai</option>
+                                            <option>Iran</option>
+                                            <option>Saudi Arabia</option>
+                                            <option>Qatar</option>
+                                            <option>Pakistan</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="agentAddress1">Address 1</label>
+                                        <input type="text" class="form-control" id="agentAddress1">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="agentAddress1">Address 2</label>
+                                        <input type="text" class="form-control" id="agentAddress2">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="agentAddressCity">City</label>
+                                        <input type="text" class="form-control" id="agentAddressCity">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Save Address</button>
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Edit Agent Information -->
+                <div
+                    tabindex="-1"
+                    role="dialog"
+                    id="editAgentInfo"
+                    class="modal right fade in"
+                    aria-labelledby="agentInfoLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal-title mb-0">
+                                    <div class="title-text" id="agentInfoLabel">Edit Agent Information</div>
+                                </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <div class="text-center mb-5">
+                                        <img src="http://placehold.it/150x150" class="rounded mx-auto mb-4 d-block" alt="Agent Profile Picture">
+                                        <button type="button" class="btn btn-primary">Add Photo</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Name</label>
+                                        <input type="text" class="form-control" value="Ali Raza">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Phone</label>
+                                        <input type="text" class="form-control" value="+383 45 387 338">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Email</label>
+                                        <input type="text" class="form-control" value="web.aliraza@gmail.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Company</label>
+                                        <input type="text" class="form-control" value="Tesla">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">License (Optional)</label>
+                                        <input type="text" class="form-control" value="123 456 789">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Website</label>
+                                        <input type="text" class="form-control" value="www.alyraxa.com">
+                                    </div>
+                                    <button type="button" class="btn btn-primary" id="editSocialMediaTrigger">Next</button>
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Edit Social Media -->
+                <div
+                    tabindex="-1"
+                    role="dialog"
+                    id="editSocialMedia"
+                    class="modal right fade in"
+                    aria-labelledby="socialMediaLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal-title mb-0">
+                                    <div class="title-text" id="socialMediaLabel">Social Media</div>
+                                </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label class="form-label" for="sm1">Facebook</label>
+                                        <input type="text" class="form-control" value="facebook.com/AlyRaxa" id="sm1">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="sm2">Twitter</label>
+                                        <input type="text" class="form-control" value="twitter.com/AlyRaxa" id="sm2">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="sm3">LinkedIn</label>
+                                        <input type="text" class="form-control" value="linkedin.com/in/AlyRaxa" id="sm3">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="smAddMore">Add more</label>
+                                        <select class="form-control" id="smAddMore">
+                                            <option>Flickr</option>
+                                            <option>Youtube</option>
+                                            <option>TikTok</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Save Contact</button>
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Choose Logo -->
+                <div
+                    tabindex="-1"
+                    role="dialog"
+                    id="chooseLogo"
+                    class="modal right fade in"
+                    aria-labelledby="chooseLogoLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal-title mb-0">
+                                    <div class="title-text" id="chooseLogoLabel">Choose Your Logo:</div>
+                                </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label class="form-label">Upload Your Logo</label>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile">
+                                            <label class="custom-file-label" for="customFile">No file selected</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="defaultCard">
+                                            <label class="custom-control-label" for="defaultCard">Use as default card</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="logoLink">Logo Link</label>
+                                        <input type="text" class="form-control" id="logoLink" value="http://www.logodesign.com/logotype1">
+                                    </div>
+                                    <div class="content-text my-4">Make this logo clickable to your company page or anyehre else.</div>
+                                    <button type="submit" class="btn btn-primary">Save</button>
+                                    <button type="submit" class="btn btn-outline-danger">Delete</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Select Default Theme -->
+                <div
+                    tabindex="-1"
+                    role="dialog"
+                    id="selectTheme"
+                    class="modal right fade in"
+                    aria-labelledby="selectThemeLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal-title mb-0">
+                                    <div class="title-text" id="selectThemeLabel">Select Default Theme</div>
+                                </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" class="theme-thumb">
+                                            <div class="theme-title">Jaad</div>
+                                            <img src="http://placehold.it/200x200" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="theme-thumb">
+                                            <div class="theme-title">Sama</div>
+                                            <img src="http://placehold.it/200x200" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="theme-thumb active">
+                                            <div class="theme-title">Jaad</div>
+                                            <img src="http://placehold.it/200x200" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="theme-thumb">
+                                            <div class="theme-title">Sama</div>
+                                            <img src="http://placehold.it/200x200" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="theme-thumb">
+                                            <div class="theme-title">Jaad</div>
+                                            <img src="http://placehold.it/200x200" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="theme-thumb">
+                                            <div class="theme-title">Sama</div>
+                                            <img src="http://placehold.it/200x200" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="theme-thumb">
+                                            <div class="theme-title">Jaad</div>
+                                            <img src="http://placehold.it/200x200" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="theme-thumb">
+                                            <div class="theme-title">Sama</div>
+                                            <img src="http://placehold.it/200x200" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="theme-thumb">
+                                            <div class="theme-title">Jaad</div>
+                                            <img src="http://placehold.it/200x200" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="theme-thumb">
+                                            <div class="theme-title">Sama</div>
+                                            <img src="http://placehold.it/200x200" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- build:js scripts/vendor.js -->
+        <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- endbuild -->
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

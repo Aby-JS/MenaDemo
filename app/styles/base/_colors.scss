@@ -1,0 +1,17 @@
+$m-color-white: #ffffff;
+$m-color-black: #000000;
+$m-color-content: #565656;
+$m-color-secondary-content: lighten(#565656, 10);
+$m-color-active: #5e81f4;
+$m-color-btn-primary: $m-color-active;
+$m-color-btn-primary-hover: darken($m-color-active, 10);
+$m-color-btn-tertiary: #00c498;
+$m-color-btn-tertiary-hover: darken($m-color-btn-tertiary, 10);
+$m-color-admin-sidebar-border: #c5c5c5;
+$m-color-admin-nav-link: $m-color-content;
+$m-color-admin-nav-link-border: #6283f4;
+$m-color-admin-content-area-bg: #f5f5fb;
+$m-color-admin-welcome-bg: #e6e9fa;
+$m-color-admin-welcome-title: $m-color-active;
+$m-color-admin-card-box-shadow: rgba(#424242, 0.08);
+$m-color-admin-form-control-bg: #eeeeee;
