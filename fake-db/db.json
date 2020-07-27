@@ -5,7 +5,11 @@
     "summary": "30% off your first order!",
     "description": {
       "mainText": "Now offering professional quality prints in various sizes finishes and paper weights.",
-      "bulletPoints": ["Flyers", "4-page folded brochures", "Sign-riders"]
+      "bulletPoints": [
+        "Flyers",
+        "4-page folded brochures",
+        "Sign-riders"
+      ]
     },
     "image": "../../images/admin-newest-feature-hero.png"
   },
@@ -77,7 +81,10 @@
         "zip_code": 125625
       },
       "published": false,
-      "urls": ["https://domain1.com", "https://domain2.com"],
+      "urls": [
+        "https://domain1.com",
+        "https://domain2.com"
+      ],
       "page_views": {}
     },
     {
@@ -88,7 +95,10 @@
         "zip_code": 125625
       },
       "published": true,
-      "urls": ["https://domain1.com", "https://domain2.com"],
+      "urls": [
+        "https://domain1.com",
+        "https://domain2.com"
+      ],
       "page_views": {}
     },
     {
@@ -99,7 +109,10 @@
         "zip_code": 125625
       },
       "published": false,
-      "urls": ["https://domain1.com", "https://domain2.com"],
+      "urls": [
+        "https://domain1.com",
+        "https://domain2.com"
+      ],
       "page_views": {}
     },
     {
@@ -110,7 +123,10 @@
         "zip_code": 125625
       },
       "published": false,
-      "urls": ["https://domain1.com", "https://domain2.com"],
+      "urls": [
+        "https://domain1.com",
+        "https://domain2.com"
+      ],
       "page_views": {}
     },
     {
@@ -121,7 +137,10 @@
         "zip_code": 125625
       },
       "published": false,
-      "urls": ["https://domain1.com", "https://domain2.com"],
+      "urls": [
+        "https://domain1.com",
+        "https://domain2.com"
+      ],
       "page_views": {}
     },
     {
@@ -132,7 +151,10 @@
         "zip_code": 125625
       },
       "published": false,
-      "urls": ["https://domain1.com", "https://domain2.com"],
+      "urls": [
+        "https://domain1.com",
+        "https://domain2.com"
+      ],
       "page_views": {}
     },
     {
@@ -309,5 +331,27 @@
       "expiry": "Aug 3, 2020",
       "type": "trial"
     }
-  }
+  },
+  "defaults": {
+    "personalData": {
+      "name": "Abdullah Shahbaz",
+      "email": "abdullah_ghani@live.com",
+      "phone": "+92 332 1026010",
+      "company": "XYZ",
+      "license": "123 456 789",
+      "website": "www.xyz.com"
+    },
+    "address": {
+      "country": "dubai",
+      "address1": "A-14 KDA Overseas Appt.",
+      "address2": "Block 13-C, Gulshan-e-Iqbal",
+      "city": "Kuwait"
+    },
+    "disclaimer": {
+      "text": "This is a custom disclaimer. And some additional disclaimer.\nThis is a custom disclaimer. And some additional disclaimer.\nThis is a custom disclaimer. And some additional disclaimer.",
+      "usage": "4"
+    },
+    "theme_img": ""
+  },
+  "theme_images": []
 }
